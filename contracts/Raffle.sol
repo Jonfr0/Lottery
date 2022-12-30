@@ -102,7 +102,6 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
 
     function performUpkeep(bytes calldata /* performData */) external override {
         (bool upkeepNeeded, ) = checkUpkeep("");
-        // require(upkeepNeeded, "Upkeep not needed");
         if (!upkeepNeeded) {
             revert Raffle__NotUpKeepNeeded(
                 address(this).balance,
@@ -110,9 +109,6 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
                 uint256(s_raffleState)
             );
         }
-    }
-
-    function requestRandomWinner() external {
         s_raffleState = RaffleState.CALCULATING;
         uint256 requestId = i_vrfCoordinator.requestRandomWords(
             i_gasLane, //gasLane
