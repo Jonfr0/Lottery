@@ -1,6 +1,6 @@
 # Lottery Smart Contract
 
-This is the second project I have worked on. In my future projects, I will start adding some frontend to make them user friendly and learn more about other tools and frameworks like React.js and Next.js
+This is the second project I have worked on. In my future projects, I will start adding some frontend to make them user friendly and learn more about other tools and frameworks like React and NextJS.
 
 ## Project Description
 
