@@ -18,6 +18,6 @@ npm hardhat coverage
 
 P.S. ~ To use goerli network you need a subcription ID in Chainlink and you need to change it in the `helper-hardhat-config.js` file. You also need approximately 20 LINK, and 0.5 goerliETH in gas fees to execute all of the transactions.
 
-Here are some faucets if you need them:
+Here are some testnet faucets if you need them:
 ##### https://goerli-faucet.pk910.de/
 ##### https://faucets.chain.link/
